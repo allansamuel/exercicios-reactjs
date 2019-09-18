@@ -1,0 +1,53 @@
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <title>03</title>
+</head>
+<body>
+    <div id="app">
+
+    </div>
+
+    <script type="text/babel">
+        class App extends React.Component{
+
+            state = {
+                name: 'Rue',
+                age: 12
+            }
+
+            handleClick(e){
+                console.log(e.target)
+            }
+
+            handleMouseOver(e){
+                console.log(e, e.pageX)
+            }
+
+            handleCopia(e){
+                console.log("Copiou")
+            }
+            render(){
+                return (
+                    <div className="app-content">
+                        <h1>Meu nome é { this.state.name } e eu tenho { this.state.age } anos </h1>
+                        
+                        <button onClick={ this.handleClick }>Clique</button>
+                        <button onMouseOver={ this.handleMouseOver }>Passe o mouse</button>
+                        
+                        <p onCopy={ this.handleCopia }> Copie </p>
+                    </div>
+                )
+            }
+        }
+
+        ReactDOM.render(<App/>, document.getElementById('app'))
+
+    </script>
+</body>
+</html>
