@@ -1,3 +1,2 @@
-# exercicios-reactjs
-Série de exercícios feitos para aprender React.js.
-Fonte: https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg
+# Aprendendo React.js
+Série de exercícios baseados no canal [The Net ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg).
