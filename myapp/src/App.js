@@ -11,8 +11,14 @@ class App extends Component {
       ]
   } //cria um state com a lista de props
 
-  AddNinja = (ninja) => {
-
+  addNinja = (ninja) => {
+    ninja.id = Math.random()
+    /* variavel local p/ copiar os objetos do state em um novo array. 
+    Para poder adicionar o novo ninja sem alterar o state diretamente */
+    let ninjas = [...this.state.ninjas, ninja] 
+    this.setState({
+      ninjas: ninjas //transforma o state atual no vetor atualizado
+    })
   }
 
   render(){
@@ -22,7 +28,7 @@ class App extends Component {
         {/* passa essa lista como props de Ninja */}
         <Ninjas ninjas={this.state.ninjas}/> 
 
-        <AddNinja />
+        <AddNinja addNinja={this.addNinja} />
 
       </div>
     );
