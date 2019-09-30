@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link, NavLink} from 'react-router-dom'
+import {Link, NavLink, withRouter} from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -7,9 +7,9 @@ const Navbar = () => {
             <div className="container">
                 <a className="brand-logo">Poké'Times</a>
                 <ul className="right">
-                    <li><Link to="/">Início</Link></li>
-                    <li><NavLink to="/about">Sobre</NavLink></li>
-                    <li><NavLink to="/contact">Contato</NavLink></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><NavLink to="/about">About</NavLink></li>
+                    <li><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
             </div>
         </nav>
@@ -17,4 +17,4 @@ const Navbar = () => {
         
     
 }
-export default Navbar
+export default withRouter(Navbar) //this function supercharges the navbar component, giving it props by default
