@@ -25,11 +25,11 @@ class Home extends Component {
                 return (
                     <div className="post card" key={post.id}>
                         
-                        <img src={Pokeball} alt="A pokeball"/>
                         
                         <div className="card-content">
                             <Link to={'/' + post.id}> 
                             <span className="card-title red-text"> <b>{post.title}</b> </span>
+                            <img src={Pokeball} alt="A pokeball"/>
                             </Link>
                             <p>{post.body}</p>
                         </div>
