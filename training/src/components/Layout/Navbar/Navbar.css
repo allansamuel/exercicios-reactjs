@@ -1,0 +1,24 @@
+.navbar.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: .8em
+}
+
+.navbar-links{
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 40px;
+}
+.navbar.container a{
+    color: white;
+    text-decoration: none;
+    margin: 0 2em 0 2em;
+}
+.navbar-links li{
+    list-style-type: none;
+}

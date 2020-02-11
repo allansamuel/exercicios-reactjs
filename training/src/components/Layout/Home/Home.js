@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
-import {Header} from '../../ExportingComponents'
+import {Header, Sobre} from '../../ExportingComponents'
+import './Home.css'
 
 export class Home extends PureComponent {
     constructor(props) {
@@ -14,6 +15,7 @@ export class Home extends PureComponent {
         return (
             <div>
                 <Header/>
+                <Sobre/>
             </div>
         )
     }

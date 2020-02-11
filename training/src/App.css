@@ -1,0 +1,7 @@
+body{
+    margin: 0;
+    font-family: Antic;
+}
+html{
+    scroll-behavior: smooth;
+}

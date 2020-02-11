@@ -1,4 +1,6 @@
 import React, { PureComponent } from 'react'
+import {Navbar} from '../../ExportingComponents'
+import './Header.css'
 
 export class Header extends PureComponent {
     constructor(props) {
@@ -11,8 +13,11 @@ export class Header extends PureComponent {
 
     render() {
         return (
-            <div>
-                
+            <div id="header-container">
+                <Navbar/>
+                <div id="header-title">
+
+                </div>
             </div>
         )
     }

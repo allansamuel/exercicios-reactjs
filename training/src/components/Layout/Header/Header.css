@@ -1,0 +1,11 @@
+#header-container{
+    width: 100%;
+    height: 720px;
+    background: linear-gradient(#0f151ba1, transparent, transparent, transparent), 
+        url("https://images.pexels.com/photos/2801567/pexels-photo-2801567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center; 
+    background-size: cover; 
+}
+
+#header-title{
+    
+}
