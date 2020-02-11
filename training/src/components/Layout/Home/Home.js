@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
+import {Header} from '../../ExportingComponents'
 
-export class Header extends PureComponent {
+export class Home extends PureComponent {
     constructor(props) {
         super(props)
 
@@ -12,7 +13,7 @@ export class Header extends PureComponent {
     render() {
         return (
             <div>
-                
+                <Header/>
             </div>
         )
     }
